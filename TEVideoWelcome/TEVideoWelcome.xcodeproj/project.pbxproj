@@ -1,0 +1,434 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6BACEF6F1B9C28E5007DEED8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BACEF6E1B9C28E5007DEED8 /* AppDelegate.swift */; };
+		6BACEF741B9C28E5007DEED8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BACEF721B9C28E5007DEED8 /* Main.storyboard */; };
+		6BACEF761B9C28E5007DEED8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BACEF751B9C28E5007DEED8 /* Images.xcassets */; };
+		6BACEF791B9C28E5007DEED8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BACEF771B9C28E5007DEED8 /* LaunchScreen.xib */; };
+		6BACEF851B9C28E5007DEED8 /* TEVideoWelcomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BACEF841B9C28E5007DEED8 /* TEVideoWelcomeTests.swift */; };
+		6BACEF8F1B9C293F007DEED8 /* TEViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BACEF8E1B9C293F007DEED8 /* TEViewController.swift */; };
+		6BACEF911B9C2987007DEED8 /* TECardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BACEF901B9C2987007DEED8 /* TECardView.swift */; };
+		6BACEF931B9C29D1007DEED8 /* welcome_video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6BACEF921B9C29D1007DEED8 /* welcome_video.mp4 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6BACEF7F1B9C28E5007DEED8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6BACEF611B9C28E5007DEED8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6BACEF681B9C28E5007DEED8;
+			remoteInfo = TEVideoWelcome;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6BACEF691B9C28E5007DEED8 /* TEVideoWelcome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TEVideoWelcome.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BACEF6D1B9C28E5007DEED8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BACEF6E1B9C28E5007DEED8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6BACEF731B9C28E5007DEED8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6BACEF751B9C28E5007DEED8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6BACEF781B9C28E5007DEED8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		6BACEF7E1B9C28E5007DEED8 /* TEVideoWelcomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TEVideoWelcomeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BACEF831B9C28E5007DEED8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BACEF841B9C28E5007DEED8 /* TEVideoWelcomeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TEVideoWelcomeTests.swift; sourceTree = "<group>"; };
+		6BACEF8E1B9C293F007DEED8 /* TEViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TEViewController.swift; sourceTree = "<group>"; };
+		6BACEF901B9C2987007DEED8 /* TECardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TECardView.swift; sourceTree = "<group>"; };
+		6BACEF921B9C29D1007DEED8 /* welcome_video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = welcome_video.mp4; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6BACEF661B9C28E5007DEED8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BACEF7B1B9C28E5007DEED8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6BACEF601B9C28E5007DEED8 = {
+			isa = PBXGroup;
+			children = (
+				6BACEF6B1B9C28E5007DEED8 /* TEVideoWelcome */,
+				6BACEF811B9C28E5007DEED8 /* TEVideoWelcomeTests */,
+				6BACEF6A1B9C28E5007DEED8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6BACEF6A1B9C28E5007DEED8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6BACEF691B9C28E5007DEED8 /* TEVideoWelcome.app */,
+				6BACEF7E1B9C28E5007DEED8 /* TEVideoWelcomeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6BACEF6B1B9C28E5007DEED8 /* TEVideoWelcome */ = {
+			isa = PBXGroup;
+			children = (
+				6BACEF921B9C29D1007DEED8 /* welcome_video.mp4 */,
+				6BACEF6E1B9C28E5007DEED8 /* AppDelegate.swift */,
+				6BACEF8E1B9C293F007DEED8 /* TEViewController.swift */,
+				6BACEF901B9C2987007DEED8 /* TECardView.swift */,
+				6BACEF721B9C28E5007DEED8 /* Main.storyboard */,
+				6BACEF751B9C28E5007DEED8 /* Images.xcassets */,
+				6BACEF771B9C28E5007DEED8 /* LaunchScreen.xib */,
+				6BACEF6C1B9C28E5007DEED8 /* Supporting Files */,
+			);
+			path = TEVideoWelcome;
+			sourceTree = "<group>";
+		};
+		6BACEF6C1B9C28E5007DEED8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6BACEF6D1B9C28E5007DEED8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6BACEF811B9C28E5007DEED8 /* TEVideoWelcomeTests */ = {
+			isa = PBXGroup;
+			children = (
+				6BACEF841B9C28E5007DEED8 /* TEVideoWelcomeTests.swift */,
+				6BACEF821B9C28E5007DEED8 /* Supporting Files */,
+			);
+			path = TEVideoWelcomeTests;
+			sourceTree = "<group>";
+		};
+		6BACEF821B9C28E5007DEED8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6BACEF831B9C28E5007DEED8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6BACEF681B9C28E5007DEED8 /* TEVideoWelcome */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BACEF881B9C28E5007DEED8 /* Build configuration list for PBXNativeTarget "TEVideoWelcome" */;
+			buildPhases = (
+				6BACEF651B9C28E5007DEED8 /* Sources */,
+				6BACEF661B9C28E5007DEED8 /* Frameworks */,
+				6BACEF671B9C28E5007DEED8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TEVideoWelcome;
+			productName = TEVideoWelcome;
+			productReference = 6BACEF691B9C28E5007DEED8 /* TEVideoWelcome.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6BACEF7D1B9C28E5007DEED8 /* TEVideoWelcomeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BACEF8B1B9C28E5007DEED8 /* Build configuration list for PBXNativeTarget "TEVideoWelcomeTests" */;
+			buildPhases = (
+				6BACEF7A1B9C28E5007DEED8 /* Sources */,
+				6BACEF7B1B9C28E5007DEED8 /* Frameworks */,
+				6BACEF7C1B9C28E5007DEED8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6BACEF801B9C28E5007DEED8 /* PBXTargetDependency */,
+			);
+			name = TEVideoWelcomeTests;
+			productName = TEVideoWelcomeTests;
+			productReference = 6BACEF7E1B9C28E5007DEED8 /* TEVideoWelcomeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6BACEF611B9C28E5007DEED8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = Terry;
+				TargetAttributes = {
+					6BACEF681B9C28E5007DEED8 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					6BACEF7D1B9C28E5007DEED8 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 6BACEF681B9C28E5007DEED8;
+					};
+				};
+			};
+			buildConfigurationList = 6BACEF641B9C28E5007DEED8 /* Build configuration list for PBXProject "TEVideoWelcome" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6BACEF601B9C28E5007DEED8;
+			productRefGroup = 6BACEF6A1B9C28E5007DEED8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6BACEF681B9C28E5007DEED8 /* TEVideoWelcome */,
+				6BACEF7D1B9C28E5007DEED8 /* TEVideoWelcomeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6BACEF671B9C28E5007DEED8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BACEF741B9C28E5007DEED8 /* Main.storyboard in Resources */,
+				6BACEF791B9C28E5007DEED8 /* LaunchScreen.xib in Resources */,
+				6BACEF931B9C29D1007DEED8 /* welcome_video.mp4 in Resources */,
+				6BACEF761B9C28E5007DEED8 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BACEF7C1B9C28E5007DEED8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6BACEF651B9C28E5007DEED8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BACEF6F1B9C28E5007DEED8 /* AppDelegate.swift in Sources */,
+				6BACEF911B9C2987007DEED8 /* TECardView.swift in Sources */,
+				6BACEF8F1B9C293F007DEED8 /* TEViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6BACEF7A1B9C28E5007DEED8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BACEF851B9C28E5007DEED8 /* TEVideoWelcomeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6BACEF801B9C28E5007DEED8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6BACEF681B9C28E5007DEED8 /* TEVideoWelcome */;
+			targetProxy = 6BACEF7F1B9C28E5007DEED8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6BACEF721B9C28E5007DEED8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6BACEF731B9C28E5007DEED8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6BACEF771B9C28E5007DEED8 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6BACEF781B9C28E5007DEED8 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6BACEF861B9C28E5007DEED8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6BACEF871B9C28E5007DEED8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6BACEF891B9C28E5007DEED8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TEVideoWelcome/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6BACEF8A1B9C28E5007DEED8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TEVideoWelcome/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6BACEF8C1B9C28E5007DEED8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TEVideoWelcomeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TEVideoWelcome.app/TEVideoWelcome";
+			};
+			name = Debug;
+		};
+		6BACEF8D1B9C28E5007DEED8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TEVideoWelcomeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TEVideoWelcome.app/TEVideoWelcome";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6BACEF641B9C28E5007DEED8 /* Build configuration list for PBXProject "TEVideoWelcome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BACEF861B9C28E5007DEED8 /* Debug */,
+				6BACEF871B9C28E5007DEED8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BACEF881B9C28E5007DEED8 /* Build configuration list for PBXNativeTarget "TEVideoWelcome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BACEF891B9C28E5007DEED8 /* Debug */,
+				6BACEF8A1B9C28E5007DEED8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6BACEF8B1B9C28E5007DEED8 /* Build configuration list for PBXNativeTarget "TEVideoWelcomeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BACEF8C1B9C28E5007DEED8 /* Debug */,
+				6BACEF8D1B9C28E5007DEED8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6BACEF611B9C28E5007DEED8 /* Project object */;
+}
