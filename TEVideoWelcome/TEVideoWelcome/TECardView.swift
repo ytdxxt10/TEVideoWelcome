@@ -13,14 +13,14 @@ class CardView: UIView {
     var passWord:UITextField?
     var judge:Bool?
     init() {
-        var viewFrame = CGRectMake(0, 0, UIScreen.mainScreen().bounds.width, UIScreen.mainScreen().bounds.height*2/3)
+        let viewFrame = CGRectMake(0, 0, UIScreen.mainScreen().bounds.width, UIScreen.mainScreen().bounds.height*2/3)
         super.init(frame: viewFrame)
         self.backgroundColor = UIColor.clearColor()
         self.layer.cornerRadius = 10.0
         self.clipsToBounds = true
         
         for index in 0...1{
-            var filed = UITextField(frame: CGRectMake(0, 0, 220, 30))
+            let filed = UITextField(frame: CGRectMake(0, 0, 220, 30))
             filed.borderStyle = UITextBorderStyle.RoundedRect
             filed.center = CGPointMake(self.frame.size.width/2, CGFloat(200+index*50))
             if index==0 {
@@ -45,11 +45,11 @@ class CardView: UIView {
         
     }
     
-    required init(coder aDecoder: NSCoder) {
+    required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         for  subview in self.subviews {
             subview.resignFirstResponder()
             

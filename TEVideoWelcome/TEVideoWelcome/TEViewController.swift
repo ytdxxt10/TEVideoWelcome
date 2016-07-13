@@ -76,13 +76,13 @@ class ViewController: UIViewController {
     }
     
     func createShowAnimation () {
-        var animation : CABasicAnimation = CABasicAnimation(keyPath: "opacity")
+        let animation : CABasicAnimation = CABasicAnimation(keyPath: "opacity")
         animation.fromValue = 0.0
         animation.toValue = 1.0
         animation.duration = 4.0
         self.titleLabel.layer.addAnimation(animation, forKey: "alpha")
         
-        var keyAnimation = CAKeyframeAnimation(keyPath: "opacity")
+        let keyAnimation = CAKeyframeAnimation(keyPath: "opacity")
         keyAnimation.duration = 4.0
         keyAnimation.values = [0.0,1.0,0.0]
         keyAnimation.keyTimes = [0.0,0.35,1.0]
@@ -91,48 +91,48 @@ class ViewController: UIViewController {
     }
     
     func createVideoPlayer( ){
-        var path = NSBundle.mainBundle().pathForResource("welcome_video", ofType: "mp4")
-        var url = NSURL(fileURLWithPath: path!)
-        var playerItem : AVPlayerItem = AVPlayerItem(URL: url)
+        let path = NSBundle.mainBundle().pathForResource("welcome_video", ofType: "mp4")
+        let url = NSURL(fileURLWithPath: path!)
+        let playerItem : AVPlayerItem = AVPlayerItem(URL: url)
         playerItem.addObserver(self, forKeyPath: "status", options: NSKeyValueObservingOptions.New, context: nil)
         
-        self.player = AVPlayer.playerWithPlayerItem(playerItem) as? AVPlayer
+        self.player = AVPlayer.init(playerItem: playerItem)
         self.player?.volume = 0.0
-        var playerLayer = AVPlayerLayer(player: self.player)
+        let playerLayer = AVPlayerLayer(player: self.player)
         playerLayer.videoGravity = "\(UIViewContentMode.ScaleToFill)"
         playerLayer.frame = self.view.bounds
         self.view.layer.addSublayer(playerLayer)
         self.player?.play()
-        self.player?.currentItem.addObserver(self, forKeyPath: AVPlayerItemDidPlayToEndTimeNotification, options: NSKeyValueObservingOptions.New, context: nil)
+        self.player?.currentItem!.addObserver(self, forKeyPath: AVPlayerItemDidPlayToEndTimeNotification, options: NSKeyValueObservingOptions.New, context: nil)
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("moviePlayDidEnd:"), name: AVPlayerItemDidPlayToEndTimeNotification, object: self.player?.currentItem)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ViewController.moviePlayDidEnd(_:)), name: AVPlayerItemDidPlayToEndTimeNotification, object: self.player?.currentItem)
         
     }
-    override func observeValueForKeyPath(keyPath: String, ofObject object: AnyObject, change: [NSObject : AnyObject], context: UnsafeMutablePointer<Void>) {
+    override func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {
         
     }
     //保证视频循环播放
     func moviePlayDidEnd(notification:NSNotification) {
-        var playerItem:AVPlayerItem = notification.object as! AVPlayerItem
+//        var playerItem:AVPlayerItem = notification.object as! AVPlayerItem
         player?.seekToTime(kCMTimeZero)
         self.player?.play()
         
     }
     
     func createButton() {
-        self.leftButton = self.createButtonWithTitleAndIndexAndAction("Login in", index: buttonDirection.buttonLeft, action: Selector("loginClick"))
+        self.leftButton = self.createButtonWithTitleAndIndexAndAction("Login in", index: buttonDirection.buttonLeft, action: #selector(ViewController.loginClick))
         self.view.addSubview(self.leftButton)
-        self.rightButton = self.createButtonWithTitleAndIndexAndAction("Register in", index: buttonDirection.buttonRight, action: Selector("signupClick"))
+        self.rightButton = self.createButtonWithTitleAndIndexAndAction("Register in", index: buttonDirection.buttonRight, action: #selector(ViewController.signupClick))
         self.view.addSubview(self.rightButton)
         
     }
     func createButtonWithTitleAndIndexAndAction(title:String,index:buttonDirection,action:Selector)->UIButton {
         
-        var windth:CGFloat = CGFloat((Int(self.view.frame.size.width) - Int(3*button_padding))/2)
-        var button = UIButton(frame: CGRectMake(0, 0, windth, 30))
-        var x:Int = Int(self.view.frame.size.width / 4)
-        var y = index.hashValue * Int(self.view.frame.size.width / 2)
-        var xWindth:CGFloat = CGFloat(x + y)
+        let windth:CGFloat = CGFloat((Int(self.view.frame.size.width) - Int(3*button_padding))/2)
+        let button = UIButton(frame: CGRectMake(0, 0, windth, 30))
+        let x:Int = Int(self.view.frame.size.width / 4)
+        let y = index.hashValue * Int(self.view.frame.size.width / 2)
+        let xWindth:CGFloat = CGFloat(x + y)
         button.center = CGPointMake(xWindth, CGFloat(self.view.frame.size.height-30))
         button.addTarget(self, action: action, forControlEvents: .TouchUpInside)
         button.setTitle(title, forState: .Normal)
@@ -207,7 +207,7 @@ class ViewController: UIViewController {
         case currentStatus.signupStatus.hashValue:
             showCardView()
         default :
-            print("haha")
+            print("haha", terminator: "")
             
         }
         
